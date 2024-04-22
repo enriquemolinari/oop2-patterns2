@@ -11,5 +11,6 @@ public class MailTrapNotificacion implements Notificacion {
     @Override
     public void notificar(String mensaje) {
         // enviando mail...
+        System.out.println("enviando mail...");
     }
 }
