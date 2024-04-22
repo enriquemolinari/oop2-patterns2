@@ -2,12 +2,25 @@ package decorator1;
 
 public class Main {
     public static void main(String[] args) {
-        //Quiero ahora Saludar con Fecha y Pais, como hago?
-        //Creo una nueva subclase que extienda de una de las dos ConFecha o ConPais
-        //tengo que ver como saco el codigo duplicado
-        //Si agregara un nueva opcion: SaludoConEmoji, las combinaciones
-        // de nuevas clases se van exponencialmente
-        var s = new NoticiaConFechaYPais("Aumento en los combustibles...");
+        //Usando decoradores !
+        var s = new ConFecha(new ConPais(new NoticiaSimple("A")));
         s.informar();
+
+        //usando builder!
+        var builder = new NoticiaBuilder(new NoticiaSimple("noticia 1"));
+        builder.conFecha().conPais().build().informar();
+        System.out.println();
+        builder = new NoticiaBuilder(new NoticiaSimple("noticia 2"));
+        builder.conPais().build().informar();
+        System.out.println();
+        builder = new NoticiaBuilder(new NoticiaSimple("noticia 3"));
+        builder.conFecha().build().informar();
+
+        //usando builder con orden!
+        var builder2 = new NoticiaBuilderOrdered(new NoticiaSimple("noticia 1o"));
+        builder2.conFecha().conPais().build().informar();
+        System.out.println();
+        builder2 = new NoticiaBuilderOrdered(new NoticiaSimple("noticia 1o"));
+        builder2.conPais().conFecha().build().informar();
     }
 }

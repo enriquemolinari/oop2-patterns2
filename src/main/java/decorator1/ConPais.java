@@ -2,14 +2,14 @@ package decorator1;
 
 import java.util.Locale;
 
-public class NoticiaConPais extends Noticia {
-    public NoticiaConPais(String textoNoticia) {
-        super(textoNoticia);
+public class ConPais extends NoticiaCompleja {
+    public ConPais(Noticia noticia) {
+        super(noticia);
     }
 
     public void informar() {
         System.out.print("[En " + Locale.getDefault().getDisplayCountry() + " ");
-        super.informar();
+        noticia.informar();
         System.out.print("]");
     }
 }

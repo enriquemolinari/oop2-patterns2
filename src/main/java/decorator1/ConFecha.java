@@ -3,9 +3,10 @@ package decorator1;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-public class NoticiaConFecha extends Noticia {
-    public NoticiaConFecha(String textoNoticia) {
-        super(textoNoticia);
+public class ConFecha extends NoticiaCompleja {
+
+    public ConFecha(Noticia noticia) {
+        super(noticia);
     }
 
     public void informar() {
@@ -13,7 +14,7 @@ public class NoticiaConFecha extends Noticia {
                 + LocalDate.now().
                 format(DateTimeFormatter.ofPattern("dd-MM-yyyy"))
                 + " ");
-        super.informar();
+        noticia.informar();
         System.out.print("]");
     }
 }
