@@ -29,14 +29,22 @@ public class NoticiaBuilderOrdered {
     }
 
     public Noticia build() {
+        sortByElegidosByKey();
+        return buildDecorators();
+    }
+
+    private void sortByElegidosByKey() {
         Collections.sort(this.elegidos, Comparator.comparingInt(orden::get));
+    }
+
+    private Noticia buildDecorators() {
         try {
             for (var clazz : this.elegidos) {
                 Constructor<?> constructor = clazz.getConstructor(Noticia.class);
                 Noticia decorador = (Noticia) constructor.newInstance(noticiaFinal);
                 noticiaFinal = decorador;
             }
-            return this.noticiaFinal;
+            return noticiaFinal;
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
