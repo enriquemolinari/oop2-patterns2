@@ -5,7 +5,7 @@ public class Main {
         //Quiero ahora Saludar con Fecha y Pais, como hago?
         //Creo una nueva subclase que extienda de una de las dos ConFecha o ConPais
         //tengo que ver como saco el codigo duplicado
-        //Si agregara un nueva opcion: SaludoConEmoji, las combinaciones
+        //Si agregara un nueva opcion: NoticiaSaludoConEmoji, las combinaciones
         // de nuevas clases se van exponencialmente
         var s = new Noticia("Aumento en los combustibles...");
         s.informar();
