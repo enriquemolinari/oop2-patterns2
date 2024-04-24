@@ -7,7 +7,7 @@ public class Main {
         //tengo que ver como saco el codigo duplicado
         //Si agregara un nueva opcion: SaludoConEmoji, las combinaciones
         // de nuevas clases se van exponencialmente
-        var s = new NoticiaConFechaYPais("Aumento en los combustibles...");
+        var s = new Noticia("Aumento en los combustibles...");
         s.informar();
     }
 }
