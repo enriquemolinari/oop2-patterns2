@@ -12,7 +12,8 @@ public class MainFrame extends JFrame {
         canvas.agregarFigura(new Texto(new Coordenada(100, 300), "Hola Mundo"));
         //Quiero agregar una imagen, pero la clase library.Image no es polimorfica con Figura
         // ¿Qué puedo hacer?
-        
+
+
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 600);
         setLocationRelativeTo(null);
