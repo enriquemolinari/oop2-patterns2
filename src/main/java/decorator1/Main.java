@@ -10,6 +10,7 @@ public class Main {
         // tiempo despues...
         // 4- A veces tambien quiero que al final se imprima un emoji que indicara el sentimiento de la Noticia
 
-        
+        var noticia = new Noticia("Las naftas aumentan...");
+        noticia.imprimir();
     }
 }
