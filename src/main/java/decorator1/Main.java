@@ -2,12 +2,14 @@ package decorator1;
 
 public class Main {
     public static void main(String[] args) {
-        //Quiero ahora Saludar con Fecha y Pais, como hago?
-        //Creo una nueva subclase que extienda de una de las dos ConFecha o ConPais
-        //tengo que ver como saco el codigo duplicado
-        //Si agregara un nueva opcion: NoticiaSaludoConEmoji, las combinaciones
-        // de nuevas clases se van exponencialmente
-        var s = new Noticia("Aumento en los combustibles...");
-        s.informar();
+        //Dada una Noticia, me piden:
+        // 1- A veces quiero que salga en la noticia la fecha impresa
+        // 2- A veces quiero que salga en la noticia el Pais de Origen
+        // tiempo despues...
+        // 3- A veces quiero que salga en la noticia el Pais de Origen y la fecha
+        // tiempo despues...
+        // 4- A veces tambien quiero que al final se imprima un emoji que indicara el sentimiento de la Noticia
+
+        
     }
 }
