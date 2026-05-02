@@ -1,4 +1,4 @@
-package adapter1.library;
+package ad1.library;
 
 import java.awt.*;
 

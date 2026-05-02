@@ -1,4 +1,4 @@
-package adapter1;
+package ad1;
 
 import java.awt.*;
 

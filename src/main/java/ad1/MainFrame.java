@@ -1,6 +1,4 @@
-package adapter1;
-
-import adapter1.library.Image;
+package ad1;
 
 import javax.swing.*;
 
