@@ -19,6 +19,11 @@ public class NoticiaBuilder {
         return this;
     }
 
+    public NoticiaBuilder conEmoji(String emoji) {
+        this.noticiaFinal = new ConEmoji(this.noticiaFinal, emoji);
+        return this;
+    }
+
     public Noticia build() {
         return this.noticiaFinal;
     }

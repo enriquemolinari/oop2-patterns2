@@ -15,6 +15,8 @@ public class Main {
         System.out.println();
         builder = new NoticiaBuilder(new NoticiaSimple("noticia 3"));
         builder.conFecha().build().informar();
+        builder = new NoticiaBuilder(new NoticiaSimple("La IA..."));
+        builder.conEmoji(":)").conFecha().build().informar();
 
         //usando builder con orden!
         var builder2 = new NoticiaBuilderOrdered(new NoticiaSimple("noticia 1o"));
