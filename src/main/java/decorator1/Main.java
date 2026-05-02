@@ -14,16 +14,7 @@ public class Main {
         // tiempo despues...
         // 4- A veces tambien quiero que al final se imprima un emoji que indicara el sentimiento de la Noticia
 
-        var franco = new ConFecha(
-                new ConEmoji(
-                        new DefaultNoticia("todo mal"), ":)"), LocalDate.now());
-        franco.imprimir();
-
-        var noticia = new NoticiaBuilder("todo mal")
-                .conPais("Argentina")
-                .conFecha(LocalDate.now())
-                .conEmoji(":)")
-                .build();
+        var noticia = new Noticia("La IA nos va a dejar sin trabajo...");
         noticia.imprimir();
 
     }

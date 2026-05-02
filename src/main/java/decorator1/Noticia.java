@@ -1,5 +1,13 @@
 package decorator1;
 
-public interface Noticia {
-    void imprimir();
+public class Noticia {
+    private String textoNoticia;
+
+    public Noticia(String textoNoticia) {
+        this.textoNoticia = textoNoticia;
+    }
+
+    public void imprimir() {
+        System.out.println("[ " + textoNoticia + " ]");
+    }
 }
