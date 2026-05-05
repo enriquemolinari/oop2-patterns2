@@ -1,5 +1,7 @@
 package ad1;
 
+import ad1.library.Image;
+
 import javax.swing.*;
 
 public class MainFrame extends JFrame {
@@ -10,8 +12,8 @@ public class MainFrame extends JFrame {
         canvas.agregarFigura(new Linea(new Coordenada(50, 50), 200));
         canvas.agregarFigura(new Circulo(new Coordenada(200, 200), 50));
         canvas.agregarFigura(new Texto(new Coordenada(100, 300), "Hola Mundo"));
-        // Instancio el adapter y le inyecto el adaptado
-        //canvas.agregarFigura(new ImageAdapter(new Image(200, 250, "g.png")));
+        // Como lo hago ser polimorfico con Figura ?
+        //new Image(200, 250, "g.png")
 
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(800, 600);

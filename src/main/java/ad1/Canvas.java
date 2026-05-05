@@ -22,6 +22,5 @@ class Canvas extends JPanel {
         for (Figura figura : figuras) {
             figura.dibujar(g2d);
         }
-        repaint();
     }
 }

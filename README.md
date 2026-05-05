@@ -20,7 +20,7 @@
     - El orden en que creamos las instancias importa y puede afectar.
     - Podemos usar un **Builder**. Propósito: Abstrae el proceso de creación de un objeto complejo, centralizando dicho
       proceso en un único punto, de tal forma que el mismo proceso de construcción pueda crear representaciones
-      diferentes.
+      diferentes. Podríamos encapsular en el builder la lógica para crear las instancias con un orden específico.
 - Adapter:
     - Propósito: permite la colaboración entre objetos con interfaces no polimórfiscas entre sí.
     - Ejemplo: Dibujar figuras en un canvas.
